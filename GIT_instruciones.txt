@@ -1,0 +1,71 @@
+Configuración
+Añadir Sublime text como editor
+git config --global core.editor="C:\\Program Files\\Sublime Text 3\\subl.exe" -w
+Quitar
+git config --global --unset core.editor
+
+Control de versiones de un proyecto nuevo con GIT.
+1.	Crear el almacén, subdirectorio .git, dentro del proyecto.
+	git init
+2.	Ver el estado inicial
+	git status
+3.	Crear con un editor de texto o copiar archivos en el proyecto.
+4.	Ver archivos creados o copiados
+	git status
+5.	Comenzar a seguir (rastrear) los archivos creados o copiados.
+	git add <file>
+	git add <Directory>
+	¡Cuidado al copiar directorios al proyecto que tengan su propio repositorio (.git) !
+6.	Dejar de rastrear archivos o directorios.
+	git rm --cached <file>
+	git rm --cached <Directory> -r
+7.	Ver las modificaciones realizadas en los archivos, sin preparar y preparadas para la confirmación.
+	git diff
+	git diff --staged
+	git diff --cached
+8.	Confirmar los cambios.
+	git commit
+	git commit -v
+	git commit -m “mensaje”
+Confirmar los cambios directamente sin pasar por el área de preparación.
+	git commit -a -m “mensaje”
+Cambiar el mensaje del último commit justo después de realizarlo.
+	git commit -amend
+Añadir archivos o directorios con archivos al último commit.
+	git add <file> <Directory>
+	git commit -amend
+	
+9.	Eliminar archivos, los comandos en rojo eliminan de almacén(.git) y del proyecto.
+	git rm <file> -f
+	git rm <Directoy> -f
+	git rm --cached <file>
+	git rm –cached Directory>
+10.	Descartar los cambios realizados en un archivo rastreado desde el último commit en el directorio de trabajo.
+	git restore <file>
+	git restore <Directory>
+11.	Ver el historial de confirmaciones, la primera lista todos los commits, la segunda además muestra las diferencias entre commits, la tercera muestra sólo las dos últimas confirmaciones con sus diferencias y la cuarta muestra estadísticas de los cambios entre commits.
+	git log
+	git log -p
+	git log -p -2
+	git log stat
+12.	Quitar del área de preparación archivos o directorios
+	git restore –staged <file> <Directory>
+13.	Ver los cambios añadidos en un commit
+	git show SHA1_HASH
+14.	Crear una Rama
+	git branch nombre
+15.	Cambiar de Rama
+	git checkout nombre
+16.	Crear y cambiar de rama a la vez
+	git checkout -b nombre
+17.	Fusionar ramas, desde la rama con la que se quiere fusionar(master)
+	git merge nombre
+18.	Borra ramas
+	git branch -d nombre
+19.	Mostrar el historial de commit, indicando a donde apunta cada rama y donde se han separado las mismas.
+	git log --oneline --decorate --graph --all
+20.	Reorganizar ramas
+	git checkout nombre
+	git rebase master
+21.	
+

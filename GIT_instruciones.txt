@@ -30,7 +30,7 @@ Control de versiones de un proyecto nuevo con GIT.
 Confirmar los cambios directamente sin pasar por el área de preparación.
 	git commit -a -m “mensaje”
 Cambiar el mensaje del último commit justo después de realizarlo.
-	git commit -amend
+	git commit --amend
 Añadir archivos o directorios con archivos al último commit.
 	git add <file> <Directory>
 	git commit -amend

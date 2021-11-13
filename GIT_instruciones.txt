@@ -33,7 +33,7 @@ Cambiar el mensaje del último commit justo después de realizarlo.
 	git commit --amend
 Añadir archivos o directorios con archivos al último commit.
 	git add <file> <Directory>
-	git commit -amend
+	git commit --amend
 	
 9.	Eliminar archivos, los comandos en rojo eliminan de almacén(.git) y del proyecto.
 	git rm <file> -f

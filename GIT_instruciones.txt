@@ -67,5 +67,8 @@ Añadir archivos o directorios con archivos al último commit.
 20.	Reorganizar ramas
 	git checkout nombre
 	git rebase master
-21.	
+21.	push an existing repository
+	git remote add origin https://github.com/mgjoseruben/ci4.git
+	git branch -M main
+	git push -u origin main
 
